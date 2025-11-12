@@ -1,10 +1,10 @@
-// app/Http/Controllers/ExampleController.php
+<?php
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http; // For external fetches
 
-class ExampleController extends Controller
+class HTMLController extends Controller
 {
     public function showDynamicContent()
     {
@@ -13,6 +13,6 @@ class ExampleController extends Controller
         $dynamicHtml = $response->body(); // Assume this is a string of HTML
 
         // Pass to view
-        return view('dynamic-view', ['htmlContent' => $dynamicHtml]);
+        return view('dynamic', ['htmlContent' => $dynamicHtml]);
     }
 }

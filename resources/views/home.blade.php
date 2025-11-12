@@ -1,5 +1,5 @@
 <x-layout>
-    <p></p>
+
     <h1>Welcome to Rune Management!</h1>
     <h2>Read the most recent article here:</h2>
     <a href="/articles/{{ $article['id'] }}" class="" text-blue-500" style="font-size: 40px">
